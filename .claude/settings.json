@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PROJECT_DIR:-.}/.claude/hooks/guard-public-repo.sh\"",
+            "timeout": 10,
+            "statusMessage": "Checking the public repo guard"
+          }
+        ]
+      }
+    ]
+  }
+}

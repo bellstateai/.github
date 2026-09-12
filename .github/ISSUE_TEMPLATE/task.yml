@@ -1,0 +1,34 @@
+name: Task
+description: A piece of work with an outcome somebody would notice
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: The outcome
+      description: What is true afterwards that isn't true now.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What goes wrong, or stays wrong, if this isn't done.
+    validations:
+      required: true
+
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: How somebody else would tell it is finished, without asking you.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything known already
+      description: Ids, links, decisions taken, things ruled out.
+    validations:
+      required: false
