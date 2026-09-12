@@ -6,9 +6,9 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash \"${CLAUDE_PROJECT_DIR:-.}/.claude/hooks/guard-public-repo.sh\"",
+            "command": "bash \"${CLAUDE_PROJECT_DIR:-.}/.claude/hooks/org-rules.sh\"",
             "timeout": 10,
-            "statusMessage": "Checking the public repo guard"
+            "statusMessage": "Checking the organisation write rules"
           }
         ]
       }

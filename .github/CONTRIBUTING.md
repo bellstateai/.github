@@ -36,6 +36,13 @@ parent using those exact directory names.  Not a path from your own machine,
 which resolves for nobody.  Relative paths are for files inside the same
 repository, where they are correct and preferred.
 
+Name the repository by its URL and the file by its path inside that repository,
+so the reference holds however somebody cloned it.
+
+This one is checked.  A relative path that climbs out of a repository and lands
+inside another one is refused.  A path that escapes into something which is not
+a repository, such as a build output directory, is left alone.
+
 ## Secrets
 
 Never in a repository, and that includes examples that look real.  Name the
